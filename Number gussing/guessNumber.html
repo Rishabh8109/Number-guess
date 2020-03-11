@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Didact+Gothic&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+             font-family: 'Didact','Gothic' , sans-serif;
+        }
+        .outputText { 
+            font-size: 25px;
+
+        }
+      #spinner { 
+          position: absolute;
+          top: 42%;
+          left: 47%;
+          display: none;
+      }
+      .active { 
+          background-color: black;
+          opacity: .7;
+      }
+    </style>
+    
+</head>
+<body class="bg-dark">
+      <div class="container">
+          <div class="row">
+             <div class="col-sm-6 m-auto">
+                <div class="card mt-5">
+                    <div class="card-header  ">
+                          <h3 class="text-center">Number gessing</h3>
+                    </div>
+                   
+                    <div class="card-body">
+                         <form action="" id="inputForm">
+                            <p class="ml-1 text-info text-bold text-sm">Enter the number give below & don't tell anyone</p>
+                            <input type="Number" id="num1" class="form-control" placeholder="Enter the number" >
+                            <p class="ml-1 mt-3 text-info text-bold text-sm">Take same number form someone, that you entered above..</p>
+                            <input type="Number" id="num2" class="form-control" placeholder="Enter the number" >
+                            <p class="ml-1 mt-3 text-info text-bold text-sm">Enter any number whatever you want to choose</p>
+                            <input type="Number" id="myNum" min="1" max="1000000" placeholder="choose any number or write" class="form-control" >
+                            <p class="ml-1 mt-2 text-danger">Now you have to  add entered values and and half then you have return number that you had taken someone</p>
+                            <button type="button" id="subbtn" class="btn btn-info mt-3 w-100">Get value</button>
+                         </form>
+                    </div>
+                </div>
+                <div id="output"></div>
+             </div>
+          </div>
+      </div>
+      <div class="spinner-border text-info" id="spinner"></div>
+     <script src="holi.js"></script>
+</body>
+</html>
